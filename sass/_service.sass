@@ -1,0 +1,52 @@
+.service
+    &_title
+        margin-top: 70px
+        +normal
+        font-size: 22px
+        line-height: 22px
+        text-align: center
+        letter-spacing: 4px
+        text-transform: uppercase
+        color: #FF5E69
+    &_subtitle
+        margin-top: 20px
+        margin-bottom: 100px
+        font-size: 54px
+        line-height: 59px
+        text-align: center
+        letter-spacing: 1px
+        +bold
+    &_cards
+        display: flex
+        justify-content: space-between
+    &_card
+        width: 300px
+        margin-bottom: 70px
+        h4
+            margin-top: 39px
+            margin-bottom: 25px
+            +bold
+            font-size: 24px
+            line-height: 26px
+        p
+            margin-right: 50px
+            margin-bottom: 25px
+            font-size: 16px
+            line-height: 28px
+            color: $gray
+            +lite
+    &_list
+        &-item
+            +bold
+            font-size: 16px
+            line-height: 28px
+            list-style: none
+            &::before
+                content: ' '
+                display: inline-block
+                margin-right: 8px
+                vertical-align: middle
+                width: 7px
+                height: 7px
+                background: url('../img/service/Rectangle.png') no-repeat center
+                background-size: 100%

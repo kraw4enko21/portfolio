@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <title>Portfolio Creator</title>
+</head>
+
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="main_header">
+                <div class="logo">
+                    <img src="img/main/Logo.png" alt="Logo" class="main_logo">
+                </div>
+                <div class="main_menu">
+                    <a href="#" class="main_links">About</a>
+                    <a href="#" class="main_links">Services</a>
+                    <a href="#" class="main_links">Projects</a>
+                    <a href="#" class="main_links">Blog</a>
+                    <a href="#" class="main_links main_links-arrow">Book a call</a>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="left-block">
+                    <h1>I design products</h1>
+                    <h2>that delight and inspire people.</h2>
+                    <p>Hi! I’m Jake, a product designer based in Berlin. I create <br> user-friendly interfaces for
+                        fast-growing startups.</p>
+                    <button class="button button-black">Book a call</button>
+                    <button class="button button-white">Download CV</button>
+                </div>
+                <div class="right-block">
+                    <img src="img/main/Portret.png" alt="">
+                </div>
+            </div>
+            <div class="main_row">
+                <h2>Trusted by</h2>
+                <div class="main_logos">
+                    <img src="img/main/01.png" alt="01" class="main_item">
+                    <img src="img/main/02.png" alt="02" class="main_item">
+                    <img src="img/main/03.png" alt="03" class="main_item">
+                    <img src="img/main/04.png" alt="04" class="main_item">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="container">
+            <h2 class="service_title">services</h2>
+            <h3 class="service_subtitle">Design that solves problems,<br> one product at a time.</h3>
+            <div class="service_cards">
+                <div class="service_card">
+                    <img src="img/service/01.png" alt="01" class="service_img">
+                    <h4>What I can do for you</h4>
+                    <p>Faster, better products that your users love. Here's all the services I provide:</p>
+                    <ul class="service_list">
+                        <li class="service_list-item">Design Strategy</li>
+                        <li class="service_list-item">Web and Mobile App Design</li>
+                        <li class="service_list-item">Front-end Development</li>
+                    </ul>
+                </div>
+                <div class="service_card">
+                    <img src="img/service/02.png" alt="02" class="service_img">
+                    <h4>Applications I'm fluent in</h4>
+                    <p>Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.</p>
+                    <ul class="service_list">
+                        <li class="service_list-item">Sketch</li>
+                        <li class="service_list-item">Webflow</li>
+                        <li class="service_list-item">Figma</li>
+                    </ul>
+                </div>
+                <div class="service_card">
+                    <img src="img/service/03.png" alt="03" class="service_img">
+                    <h4>What you can expect</h4>
+                    <p>I design products that are more than pretty. I make them shippable and usable.</p>
+                    <ul class="service_list">
+                        <li class="service_list-item">Clean and functional</li>
+                        <li class="service_list-item">Device and user friendly</li>
+                        <li class="service_list-item">Efficient and maintainable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <div class="projects_header">
+                <div class="projects_content">
+                    <h2 class="projects_title">PROJECTS</h2>
+                    <h3 class="projects_subtitle">I bring results. <br> My clients are proof.</h3>
+                </div>
+                <button class="button button-black">View all projects</button>
+            </div>
+            <div class="projects-slider">
+                <div class="projects-slider_item">
+                    <img src="img/projects/01.png" alt="01">
+                    <h3>Branding</h3>
+                    <span>Soulful Rebrand</span>
+                    <a href="#" class="projects-slider_link">View Project</a>
+                </div>
+                <div class="projects-slider_item">
+                    <img src="img/projects/02.png" alt="02">
+                    <h3>Product Design</h3>
+                    <span>Datadash Product design</span>
+                    <a href="#" class="projects-slider_link">View Project</a>
+                </div>
+                <div class="projects-slider_item">
+                    <img src="img/projects/01.png" alt="">
+                    <h3>Web Design</h3>
+                    <span>Maize Website Design</span>
+                    <a href="#" class="projects-slider_link">View Project</a>
+                </div>
+                <div class="projects-slider_item">
+                    <img src="img/projects/02.png" alt="">
+                    <h3>Product Design</h3>
+                    <span>Maize Website Design</span>
+                    <a href="#" class="projects-slider_link">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="black"></div>
+    </section>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+        integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.projects-slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow:'<button type="button" class="projects-slider-btn projects-slider-prev-btn"> <img src="img/projects/prev.png" alt=""></button>',
+		  	nextArrow:'<button type="button" class="projects-slider-btn projects-slider-next-btn"> <img src="img/projects/next.png" alt=""></button>'
+            });
+
+        });
+    </script>
+</body>
+
+</html>

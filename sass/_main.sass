@@ -1,0 +1,57 @@
+.main
+    &_header
+        display: flex
+        justify-content: space-between
+        padding-top: 40px
+    &_menu
+        display: flex
+        justify-content: space-around
+    &_links
+        position: relative
+        text-decoration: none
+        margin: 0 40px 0
+        font-size: 16px
+        color: #000000
+        &-arrow
+            &::after
+                content: ' '
+                display: inline-block
+                width: 15px
+                height: 15px
+                background: url(../img/arrow.png) no-repeat center
+                background-size: 100%
+                vertical-align: middle
+                margin-left: 10px
+    &_content
+        display: flex
+        justify-content: space-between
+    &_row
+        padding-top: 77px
+        h2
+            margin-bottom: 42px
+            text-align: center
+            font-size: 18px
+            line-height: 18px
+    &_logos
+        display: flex
+        justify-content: space-around
+    &_item
+        margin: 0 100px 0
+.left-block
+    padding-top: 100px
+    h1
+        +bold
+        font-size: 72px
+        line-height: 82px
+        color: $orange
+    h2
+        margin-bottom: 34px
+        +bold
+        font-size: 72px
+        line-height: 82px
+    p
+        margin-bottom: 34px
+        +lite
+        font-size: 22px
+        line-height: 33px
+        color: $gray

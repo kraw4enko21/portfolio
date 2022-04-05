@@ -1,0 +1,54 @@
+.blogs
+    padding-top: 200px
+    padding-bottom: 145px
+    background-color: #000000
+    &_content
+        display: flex
+        justify-content: space-between
+    &_titles
+        h3
+            +bold
+            font-size: 22px
+            line-height: 22px
+            letter-spacing: 4px
+            text-transform: uppercase
+            color: #FFA84B
+        h2
+            margin-top: 16px
+            margin-bottom: 35px
+            +bold
+            font-size: 54px
+            line-height: 59px
+            letter-spacing: 1px
+            color: #FFFFFF
+    &_btn
+        padding-left: 0
+        &::after
+            content: ' '
+            display: inline-block
+            width: 15px
+            height: 15px
+            background: url(../img/arrow-white.png) no-repeat center
+            background-size: 100%
+            vertical-align: middle
+            margin-left: 20px
+    &_card
+        margin-top: 65px
+        padding-bottom: 10px
+        width: 690px
+        border-bottom: 1px solid $gray
+        h3
+            margin-top: 25px
+            margin-bottom: 10px
+            +bold
+            font-size: 28px
+            line-height: 36px
+            color: #FFFFFF
+
+    &_data
+        +bold
+        font-size: 15px
+        line-height: 16px
+        color: rgba(255, 255, 255, 0.7)
+.point-white
+    color: #fff

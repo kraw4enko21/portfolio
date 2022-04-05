@@ -1,0 +1,51 @@
+.footer
+    padding-top: 100px
+    padding-bottom: 50px
+    background-color: #000000
+    color: #fff
+    &_title
+        +bold
+        font-size: 54px
+        line-height: 59px
+        letter-spacing: 1px
+    &_subtitle
+        margin-bottom: 100px
+        +bold
+        font-size: 54px
+        line-height: 59px
+        letter-spacing: 0.5px
+        color: #3C46FF
+    &_content
+        display: flex
+        justify-content: space-between
+.adress
+    margin: 15px 0 10px
+    font-size: 16px
+    line-height: 28px
+    color: $gray
+.email
+    font-size: 17px
+    line-height: 36px
+    color: #5C5C5C
+    &::before
+        content: ' '
+        display: inline-block
+        margin-right: 8px
+        vertical-align: middle
+        width: 30px
+        height: 21px
+        background: url('../img/letter.png') no-repeat center
+        background-size: 100%
+.links
+    display: flex
+    justify-content: space-between
+    width: 600px
+    &_item
+        list-style: none
+        margin-bottom: 40px
+    &_content
+        +bold
+        text-decoration: none
+        font-size: 18px
+        line-height: 18px
+        color: #fff

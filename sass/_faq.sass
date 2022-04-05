@@ -1,0 +1,48 @@
+.faq
+    padding-top: 85px
+    padding-bottom: 85px
+    background-color: #000000
+    color: #FFFFFF
+    &_subtitle
+        margin-bottom: 20px
+        text-align: center
+        +bold
+        font-size: 22px
+        line-height: 22px
+        letter-spacing: 4px
+        text-transform: uppercase
+        color: #FF8A56
+    &_title
+        margin-bottom: 115px
+        text-align: center
+        +bold
+        font-size: 54px
+        line-height: 59px
+        letter-spacing: 1px
+    &_block
+        display: inline-block
+        vertical-align: top
+        margin: 0 10px
+        width: 570px
+        border-bottom: 0.5px solid $gray
+.accordion-button
+    margin-bottom: 40px
+    background-color: #000
+    +bold
+    font-size: 22px
+    line-height: 31px
+    letter-spacing: 0.3px
+    color: #FFFFFF
+.accordion-button:not(.collapsed)
+    background-color: #000
+.accordion-body
+    background-color: #000
+    border: 1px solid #000
+.accordion-item
+    background-color: #000  
+    margin-top: 24px
+    margin-bottom: 10px
+    border-bottom: 0.5px solid $gray
+.accordion-button::after
+    background-image: url('../img/arrow-bottom.png')
+
